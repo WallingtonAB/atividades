@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula6</title>
+    <script type="text/javascript">
+        let numero1 = prompt('informe o primeiro numero:');
+        let numero2 = prompt('informe o segundo numero:');
+    
+        /*if (isNaN(numero1) || isNaN(numero2) || numero1 == '' || numero2 == '' ) {
+    
+            alert('valor(es)) inválido(s)!');
+    
+        }
+    
+        else {
+            numero1 = parseFloat(numero1);
+            numero2 = parseFloat(numero2);
+        
+            alert (numero1 + numero2);
+        }*/
+
+        if(!isNaN(numero1) && !isNaN(numero1) && numero1 != '' && numero1 != '' ){
+
+            numero1 = parseFloat(numero1);
+            numero2 = parseFloat(numero2);
+        
+            let resposta = numero1 - numero2;
+            alert(resposta);
+        
+        if(resposta < 0){
+
+            alert('O resultado é um numero negativo');
+        }
+        else if(resposta == 0){
+            
+            alert('O resultado é 0');
+        }
+        else  {
+            
+            alert('O resultado é maior que 0');
+        }
+
+        }
+
+        else {
+
+            alert('valor(es)) inválido(s)!');
+
+        }
+
+    </script>
+    
+</head>
+<body>
+    
+</body>
+</html>
